@@ -10,9 +10,9 @@ Nmap::XML.new(open ARGV[0]) do |xml|
     ip = host.ip
     mac = host.mac
     name = host.hostnames[0]
-    #puts ip
-    #puts mac
-    #puts name
+    puts ip
+    puts mac
+    puts name
     #host.os.matches[0]
     #host.os.matches[1]
     #host.os.matches[2]
@@ -20,6 +20,6 @@ Nmap::XML.new(open ARGV[0]) do |xml|
 
 #Inserting into db
     db.execute("INSERT INTO hosts_table (ip, mac, name) 
-                VALUES (?, ?, ?)", [@ip, @mac, @name])
+                VALUES (?, ?, ?)", [ip, mac, name.to_s])
   end
 end
