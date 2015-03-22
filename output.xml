@@ -1,0 +1,491 @@
+
+    <?xml version="1.0"?>
+    <?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+    <!-- Nmap 6.40 scan initiated Thu Feb 12 20:48:48 2015 as: nmap -A -oX output.xml 10.151.8.0/24 -->
+    <nmaprun scanner="nmap" args="nmap -A -oX output.xml 10.151.8.0/24" start="1423792128" startstr="Thu Feb 12 20:48:48 2015" version="6.40" xmloutputversion="1.04">
+    <scaninfo type="syn" protocol="tcp" numservices="1000" services="1,3-4,6-7,9,13,17,19-26,30,32-33,37,42-43,49,53,70,79-85,88-90,99-100,106,109-111,113,119,125,135,139,143-144,146,161,163,179,199,211-212,222,254-256,259,264,280,301,306,311,340,366,389,406-407,416-417,425,427,443-445,458,464-465,481,497,500,512-515,524,541,543-545,548,554-555,563,587,593,616-617,625,631,636,646,648,666-668,683,687,691,700,705,711,714,720,722,726,749,765,777,783,787,800-801,808,843,873,880,888,898,900-903,911-912,981,987,990,992-993,995,999-1002,1007,1009-1011,1021-1100,1102,1104-1108,1110-1114,1117,1119,1121-1124,1126,1130-1132,1137-1138,1141,1145,1147-1149,1151-1152,1154,1163-1166,1169,1174-1175,1183,1185-1187,1192,1198-1199,1201,1213,1216-1218,1233-1234,1236,1244,1247-1248,1259,1271-1272,1277,1287,1296,1300-1301,1309-1311,1322,1328,1334,1352,1417,1433-1434,1443,1455,1461,1494,1500-1501,1503,1521,1524,1533,1556,1580,1583,1594,1600,1641,1658,1666,1687-1688,1700,1717-1721,1723,1755,1761,1782-1783,1801,1805,1812,1839-1840,1862-1864,1875,1900,1914,1935,1947,1971-1972,1974,1984,1998-2010,2013,2020-2022,2030,2033-2035,2038,2040-2043,2045-2049,2065,2068,2099-2100,2103,2105-2107,2111,2119,2121,2126,2135,2144,2160-2161,2170,2179,2190-2191,2196,2200,2222,2251,2260,2288,2301,2323,2366,2381-2383,2393-2394,2399,2401,2492,2500,2522,2525,2557,2601-2602,2604-2605,2607-2608,2638,2701-2702,2710,2717-2718,2725,2800,2809,2811,2869,2875,2909-2910,2920,2967-2968,2998,3000-3001,3003,3005-3007,3011,3013,3017,3030-3031,3052,3071,3077,3128,3168,3211,3221,3260-3261,3268-3269,3283,3300-3301,3306,3322-3325,3333,3351,3367,3369-3372,3389-3390,3404,3476,3493,3517,3527,3546,3551,3580,3659,3689-3690,3703,3737,3766,3784,3800-3801,3809,3814,3826-3828,3851,3869,3871,3878,3880,3889,3905,3914,3918,3920,3945,3971,3986,3995,3998,4000-4006,4045,4111,4125-4126,4129,4224,4242,4279,4321,4343,4443-4446,4449,4550,4567,4662,4848,4899-4900,4998,5000-5004,5009,5030,5033,5050-5051,5054,5060-5061,5080,5087,5100-5102,5120,5190,5200,5214,5221-5222,5225-5226,5269,5280,5298,5357,5405,5414,5431-5432,5440,5500,5510,5544,5550,5555,5560,5566,5631,5633,5666,5678-5679,5718,5730,5800-5802,5810-5811,5815,5822,5825,5850,5859,5862,5877,5900-5904,5906-5907,5910-5911,5915,5922,5925,5950,5952,5959-5963,5987-5989,5998-6007,6009,6025,6059,6100-6101,6106,6112,6123,6129,6156,6346,6389,6502,6510,6543,6547,6565-6567,6580,6646,6666-6669,6689,6692,6699,6779,6788-6789,6792,6839,6881,6901,6969,7000-7002,7004,7007,7019,7025,7070,7100,7103,7106,7200-7201,7402,7435,7443,7496,7512,7625,7627,7676,7741,7777-7778,7800,7911,7920-7921,7937-7938,7999-8002,8007-8011,8021-8022,8031,8042,8045,8080-8090,8093,8099-8100,8180-8181,8192-8194,8200,8222,8254,8290-8292,8300,8333,8383,8400,8402,8443,8500,8600,8649,8651-8652,8654,8701,8800,8873,8888,8899,8994,9000-9003,9009-9011,9040,9050,9071,9080-9081,9090-9091,9099-9103,9110-9111,9200,9207,9220,9290,9415,9418,9485,9500,9502-9503,9535,9575,9593-9595,9618,9666,9876-9878,9898,9900,9917,9929,9943-9944,9968,9998-10004,10009-10010,10012,10024-10025,10082,10180,10215,10243,10566,10616-10617,10621,10626,10628-10629,10778,11110-11111,11967,12000,12174,12265,12345,13456,13722,13782-13783,14000,14238,14441-14442,15000,15002-15004,15660,15742,16000-16001,16012,16016,16018,16080,16113,16992-16993,17877,17988,18040,18101,18988,19101,19283,19315,19350,19780,19801,19842,20000,20005,20031,20221-20222,20828,21571,22939,23502,24444,24800,25734-25735,26214,27000,27352-27353,27355-27356,27715,28201,30000,30718,30951,31038,31337,32768-32785,33354,33899,34571-34573,35500,38292,40193,40911,41511,42510,44176,44442-44443,44501,45100,48080,49152-49161,49163,49165,49167,49175-49176,49400,49999-50003,50006,50300,50389,50500,50636,50800,51103,51493,52673,52822,52848,52869,54045,54328,55055-55056,55555,55600,56737-56738,57294,57797,58080,60020,60443,61532,61900,62078,63331,64623,64680,65000,65129,65389"/>
+    <verbe level="0"/>
+    <debugging level="0"/>
+    <host starttime="1423792129" endtime="1423792675"><status state="up" reason="arp-response" reason_ttl="0"/>
+    <address addr="10.151.8.1" addrtype="ipv4"/>
+    <address addr="00:04:23:BA:EF:76" addrtype="mac" vendor="Intel"/>
+    <hostnames>
+    <hostname name="caverouter.cave.norserage.com" type="PTR"/>
+    </hostnames>
+    <ports><extraports state="filtered" count="994">
+    <extrareasons reason="no-responses" count="994"/>
+    </extraports>
+    <port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="5.4p1_hpn13v11" extrainfo="FreeBSD 20100308; protocol 2.0" ostype="FreeBSD" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:5.4p1_hpn13v11</cpe><cpe>cpe:/o:freebsd:freebsd</cpe></service><script id="ssh-hostkey" output="1024 27:b0:27:2d:21:77:7c:5c:9a:b9:a6:ca:91:cf:b4:dd (DSA)&#xa;2048 66:33:f1:e3:10:e7:7d:76:56:9e:64:8b:48:38:d9:ff (RSA)"><table>
+    <elem key="key">AAAAB3NzaC1kc3MAAACBAJ6aytBM+B007CxQhATcQ/KU/phpQjR/N4wsEQ0QfwLlTCv9Ezg482WA6bs1IF/snwECxTO9E0xYT0aHaHhXHO7k+XgcqGtf+Mk1cPvQtR13O6V0L1Gz8u/sxpn+b5kudrY7KkEzCvWHYn9T88CrpfUF9/OcXf+tkzf+J8zAZSYRAAAAFQDzfz7BuMJnRLPRkz0g4PDLcg6txwAAAIA+8uh1OegMenlHxLSyYp0gZKZOcboFUORiCS1UZYis6eNoD4XOHcyZRZOUlmn5QB950aawmLHi4PniI7XQMsKixp2Pg9jGJPdQVUFhONwjmaOXoMq94B6Tc1hQw+1CiC1e0H/Cdlxf3pnfRYeyr9maQTGnY7cKsST4IKDaKb0j5AAAAIA/FMoagxKHQAdAW7qtOmRa8/IhGiRu4YpZsSNoJDhg3XYYSIbh+8kmBMu5XFTS46lu5kLlQSsCf6BPDZ2KrFlQFA5yGgmP3iOFT0S0w6XM0A/hMZ5vcdMS+s5+JMMvHxez5PvOkDJ/ElfWUeIquZ7UzkfCpScoP2iXRtVlIRyRIQ==</elem>
+    <elem key="bits">1024</elem>
+    <elem key="type">ssh-dss</elem>
+    <elem key="fingerprint">27b0272d21777c5c9ab9a6ca91cfb4dd</elem>
+    </table>
+    <table>
+    <elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDDJ743dyjkYNYRws4A568SWT/tz5JixXwurAeo/mI/QXCq2DHh0sQ96wTLF6SOqnRiBdxLJy3NCXrCKb5Qo1vS/FtYxBYmtt842TWKltE9ZqdhETNsBDZrVP5aCErc4UtMkeOk7TO/N8HIlOMJ8/CdKCUMXeyzmlfuBvJfbfSIlat5AIvgzaWdpNAzMKYK/FgBy1Vmth32nXHNJ0P9N0CUNtImk5I1YwfIAYKu7pR6bVwbOKTaCw/0d2t0EubU8JJrLwa7n5/ziSS1iECsibM9ngGtzgi0zjdgAncyv5LgbK6d2rGZqyukyTyzwmciQ3yTn3lGNBr6amzW1S+tZnHn</elem>
+    <elem key="bits">2048</elem>
+    <elem key="type">ssh-rsa</elem>
+    <elem key="fingerprint">6633f1e310e77d76569e648b4838d9ff</elem>
+    </table>
+    </script></port>
+    <port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="domain" product="dnsmasq" version="2.68" method="probed" conf="10"><cpe>cpe:/a:thekelleys:dnsmasq:2.68</cpe></service><script id="dns-nsid" output="&#xa;  bind.version: dnsmasq-2.68&#xa;"/></port>
+    <port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="lighttpd" version="1.4.35" method="probed" conf="10"><cpe>cpe:/a:lighttpd:lighttpd:1.4.35</cpe></service><script id="http-methods" output="No Allow or Public header in OPTIONS response (status code 301)"/><script id="http-title" output="Did not follow redirect to https://caverouter.cave.norserage.com/"><elem key="redirect_url">https://caverouter.cave.norserage.com/</elem>
+    </script></port>
+    <port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="lighttpd" version="1.4.35" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:lighttpd:lighttpd:1.4.35</cpe></service><script id="http-methods" output="No Allow or Public header in OPTIONS response (status code 200)"/><script id="http-title" output="Login"><elem key="title">Login</elem>
+    </script><script id="ssl-cert" output="Subject: commonName=caverouter.cave.norserage.com/organizationName=Norser@g3/stateOrProvinceName=Kentucky/countryName=US&#xa;Not valid before: 2014-06-11T20:14:00+00:00&#xa;Not valid after:  Can&apos;t parse; string is &quot;20630723193700Z&quot;"><table key="subject">
+    <elem key="commonName">caverouter.cave.norserage.com</elem>
+    <elem key="countryName">US</elem>
+    <elem key="localityName">Florence</elem>
+    <elem key="organizationName">Norser@g3</elem>
+    <elem key="stateOrProvinceName">Kentucky</elem>
+    <elem key="organizationalUnitName">Cave</elem>
+    </table>
+    <table key="issuer">
+    <elem key="localityName">HIGHLAND HEIGHTS</elem>
+    <elem key="commonName">Norser@g3</elem>
+    <elem key="organizationName">Norser@g3</elem>
+    <elem key="stateOrProvinceName">Kentucky</elem>
+    <elem key="countryName">US</elem>
+    </table>
+    <table key="pubkey">
+    <elem key="type">rsa</elem>
+    <elem key="bits">4096</elem>
+    </table>
+    <table key="validity">
+    <elem key="notAfter">20630723193700Z</elem>
+    <elem key="notBefore">2014-06-11T20:14:00+00:00</elem>
+    </table>
+    <elem key="md5">41cd3f1e38d35ed9ac73cdfb91ac1a8d</elem>
+    <elem key="sha1">ee0312f1fe35404dd159d579d6091ce02cc14c6f</elem>
+    <elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIGLTCCBBWgAwIBAgIBBTANBgkqhkiG9w0BAQUFADBjMQswCQYDVQQGEwJVUzER&#xa;MA8GA1UECBMIS2VudHVja3kxGTAXBgNVBAcTEEhJR0hMQU5EIEhFSUdIVFMxEjAQ&#xa;BgNVBAoMCU5vcnNlckBnMzESMBAGA1UEAwwJTm9yc2VyQGczMCAXDTE0MDYxMTIx&#xa;MTQwMFoYDzIwNjMwNzIzMTkzNzAwWjB+MQswCQYDVQQGEwJVUzERMA8GA1UECBMI&#xa;S2VudHVja3kxETAPBgNVBAcTCEZsb3JlbmNlMRIwEAYDVQQKDAlOb3JzZXJAZzMx&#xa;DTALBgNVBAsTBENhdmUxJjAkBgNVBAMTHWNhdmVyb3V0ZXIuY2F2ZS5ub3JzZXJh&#xa;Z2UuY29tMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAw0splrqXl54T&#xa;n4e7YPFYWqJsGOKtwF4j/pcja+VMKHnzb/7vDzeQqlygYKekFQ2F1mFRJIdIcJrE&#xa;409uDqMGYMNW7hQZwYD5tmsMtu/ZmKuV7t1F8meMFIrEZ/CaVhToJcnPdeYHBn+z&#xa;UvgPId520lnteuqTYoV054J2mT6jsYyOszObCwgrkYs4L9q7wE/2nQ3VWLBxgIom&#xa;7gP6x7NFOxluSEdlxOhZDGWNpndwcDas/i1N4jueME0s+sYDWXplBnkbeFqUc4jk&#xa;uSokgHzRQxNFbFmfr8KPvEyrteSpUfro9vIgC8yGajdltLCCq5QRRgaYsoi1XiM0&#xa;3DeSep9l9rMah4x+CRw2GPBI8PRsd3ABnIYBwRTPKtPkvH3CCut+PmrC++OAMBsu&#xa;o5gcVme0LWkYBl2PFcgha6bj8zkKscFWZTEnV1AvZjN9oSSOVeHgTs4nRMqchI/B&#xa;AiUfNLiUDuyd5unmNvITZRlAmsTcKboxmnuUXPLP+LfZPtziCKFVZDTXOhxsz8MU&#xa;+JaodcJMIjgNqR12EEZYN1MWcLlJWLxv54b9pAWg7Ln5+kyMNRdql2piJtmH+tZQ&#xa;7g48sVU/XiLjfoPSFFCJvUt2jCwsb+FrCaAuEaiqYbsjcWpUhJjhMkQzOsdIUoXm&#xa;k6+4ux0gC7uXMa/pXDSDETfknUJ+sHkCAwEAAaOBzjCByzAMBgNVHRMBAf8EAjAA&#xa;MB0GA1UdDgQWBBRXg7TF8gMTZxdwSdIAyXSa0rYeuzALBgNVHQ8EBAMCBeAwXAYD&#xa;VR0RBFUwU4IdY2F2ZXJvdXRlci5jYXZlLm5vcnNlcmFnZS5jb22CGnBmc2Vuc2Uu&#xa;Y2F2ZS5ub3JzZXJhZ2UuY29tggoxMC4xNTEuOC4xggoxMC4xNTEuOS4xMBEGCWCG&#xa;SAGG+EIBAQQEAwIGQDAeBglghkgBhvhCAQ0EERYPeGNhIGNlcnRpZmljYXRlMA0G&#xa;CSqGSIb3DQEBBQUAA4ICAQAcztvd5m3BzOMZ3Ua5DD8MXE3R9jsO13RXccZO0/Io&#xa;tdaRlhGYMKEAArQGTLHcqI2kv+mFlIqHZkoANorX6vVggmrY1FJRlhXtZJaI6/kH&#xa;5ScAsPYuWleejuwXI284VEFUZxBDjhazSGAc67p4PXOpBr9qeakwcCCpQRDD88jW&#xa;jJqjadqkNwNw8YoJiOQcaaXocGFjev2ppeog3o+QVmVc048ZMCY0rFRuoLsODgOE&#xa;46t/mBEMLEmuKU82SBJLXNwT/FiRmQ/YD08MN5KBxkgIYf1XQovOBU2GGYtikRKR&#xa;7tZNIVB1nGP07dSYwalIH6EWuHw3Oxd+dAQpJdMgtRX+IKCGzmmbX7FGj8TlEYXE&#xa;4nmsyOrFPEoOWPxItlITSkGmqcHLZpz3/9bEe+u7XKxka7uADmTUsfdBuMXAVoy2&#xa;mwfqtyk9VJoFg945xC3NlqQiBRrIOOfVlaplJaH6PBOLTQbH5sL6H5Vkoud7bG5u&#xa;g6wDcWVVo3PNMsMai1TuP3ZnpaiWdUswUhlIQ/GxEQvwRpDOomqtmlVbk9EeIpY3&#xa;bupir9YhhR/gCCRLkzkP5VLPhIoJT89QfgfVrSEHiLaENbMBstGzhGFNxyd6XBOC&#xa;4eFnhuk2hBdplO/ja0VVkL+Nx22laEgOMkBrBK9ItPqcd8SpZ5/G8PUAU5MZCCeW&#xa;bw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+    </script><script id="ssl-date" output="2025-04-05T16:53:58+00:00; +10y51d14h56m05s from local time."><elem key="delta">320079365</elem>
+    <elem key="date">2025-04-05T16:53:58+00:00</elem>
+    </script></port>
+    <port protocol="tcp" portid="2601"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="quagga" product="Quagga routing software" version="0.99.22.3" extrainfo="Derivative of GNU Zebra" method="probed" conf="10"/></port>
+    <port protocol="tcp" portid="2604"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="quagga" product="Quagga routing software" version="0.99.22.3" extrainfo="Derivative of GNU Zebra" method="probed" conf="10"/></port>
+    </ports>
+    <os><portused state="open" proto="tcp" portid="22"/>
+    <osmatch name="OpenBSD 4.0" accuracy="93" line="63858">
+    <osclass type="general purpose" vendor="OpenBSD" osfamily="OpenBSD" osgen="4.X" accuracy="93"><cpe>cpe:/o:openbsd:openbsd:4.0</cpe></osclass>
+    </osmatch>
+    <osmatch name="Comau C4G robot control unit" accuracy="92" line="15403">
+    <osclass type="specialized" vendor="Comau" osfamily="embedded" accuracy="92"/>
+    </osmatch>
+    <osmatch name="FreeBSD 6.3-RELEASE" accuracy="89" line="21293">
+    <osclass type="general purpose" vendor="FreeBSD" osfamily="FreeBSD" osgen="6.X" accuracy="89"><cpe>cpe:/o:freebsd:freebsd:6.3</cpe></osclass>
+    </osmatch>
+    <osmatch name="Linux 2.6.29" accuracy="89" line="41338">
+    <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.6.29</cpe></osclass>
+    </osmatch>
+    <osmatch name="OpenBSD 4.3" accuracy="85" line="64114">
+    <osclass type="general purpose" vendor="OpenBSD" osfamily="OpenBSD" osgen="4.X" accuracy="85"><cpe>cpe:/o:openbsd:openbsd:4.3</cpe></osclass>
+    </osmatch>
+    </os>
+    <uptime seconds="43" lastboot="Thu Feb 12 20:57:40 2015"/>
+    <distance value="1"/>
+    <tcpsequence index="263" difficulty="Good luck!" values="C0B4ABEA,CCDB3745,DBB14834,8739718D,48E77BC,3AB5BD91"/>
+    <ipidsequence class="Randomized" values="CC85,C566,F247,CCFA,540B,F820"/>
+    <tcptssequence class="other" values="918BE6FA,CC20AD6E,493D8DE8,5CCEF491,BE8C3E1B,F09A7120"/>
+    <trace>
+    <hop ttl="1" ipaddr="10.151.8.1" rtt="0.23" host="caverouter.cave.norserage.com"/>
+    </trace>
+    <times srtt="230" rttvar="48" to="100000"/>
+    </host>
+    <host starttime="1423792129" endtime="1423792703"><status state="up" reason="arp-response" reason_ttl="0"/>
+    <address addr="10.151.8.2" addrtype="ipv4"/>
+    <address addr="60:A4:4C:F3:64:10" addrtype="mac" vendor="Asustek Computer"/>
+    <hostnames>
+    <hostname name="thebmw-win81.cave.norserage.com" type="PTR"/>
+    </hostnames>
+    <ports><extraports state="closed" count="997">
+    <extrareasons reason="resets" count="997"/>
+    </extraports>
+    <port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="telnet" servicefp="SF-Port23-TCP:V=6.40%I=7%D=2/12%Time=54DD59B6%P=x86_64-pc-linux-gnu%r(NULL,7B,&quot;\xff\xfd\x01\xff\xfd\x1f\xff\xfb\x01\xff\xfb\x03\r\r\nDD-WRT\x20v24-sp2\x20kongac\x20\(c\)\x202014\x20NewMedia-NET\x20GmbH\r\nRelease:\x2002/07/14\x20\(SVN\x20revision:\x2023550M\)\r\n\r\nDD-WRT\x20login:\x20&quot;)%r(GenericLines,157,&quot;\xff\xfd\x01\xff\xfd\x1f\xff\xfb\x01\xff\xfb\x03\r\r\nDD-WRT\x20v24-sp2\x20kongac\x20\(c\)\x202014\x20NewMedia-NET\x20GmbH\r\nRelease:\x2002/07/14\x20\(SVN\x20revision:\x2023550M\)\r\n\r\nDD-WRT\x20login:\x20\r\n\r\nDD-WRT\x20v24-sp2\x20kongac\x20\(c\)\x202014\x20NewMedia-NET\x20GmbH\r\nRelease:\x2002/07/14\x20\(SVN\x20revision:\x2023550M\)\r\n\r\nDD-WRT\x20login:\x20DD-WRT\x20v24-sp2\x20kongac\x20\(c\)\x202014\x20NewMedia-NET\x20GmbH\r\nRelease:\x2002/07/14\x20\(SVN\x20revision:\x2023550M\)\r\n\r\nDD-WRT\x20login:\x20&quot;)%r(GetRequest,97,&quot;\xff\xfd\x01\xff\xfd\x1f\xff\xfb\x01\xff\xfb\x03\r\r\nDD-WRT\x20v24-sp2\x20kongac\x20\(c\)\x202014\x20NewMedia-NET\x20GmbH\r\nGET\x20/\x20HTTP/1\.0\r\n\r\nRelease:\x2002/07/14\x20\(SVN\x20revision:\x2023550M\)\r\n\r\nDD-WRT\x20login:\x20Password:\x20&quot;)%r(HTTPOptions,91,&quot;\xff\xfd\x01\xff\xfd\x1f\xff\xfb\x01\xff\xfb\x03\r\r\nOPTIONS\x20/\x20HTTP/1\.0\r\n\r\nDD-WRT\x20v24-sp2\x20kongac\x20\(c\)\x202014\x20NewMedia-NET\x20GmbH\r\nRelease:\x2002/07/14\x20\(SVN\x20revision:\x2023550M\)\r\n\r\nDD-WRT\x20login:\x20&quot;)%r(RTSPRequest,91,&quot;\xff\xfd\x01\xff\xfd\x1f\xff\xfb\x01\xff\xfb\x03\r\r\nOPTIONS\x20/\x20RTSP/1\.0\r\n\r\nDD-WRT\x20v24-sp2\x20kongac\x20\(c\)\x202014\x20NewMedia-NET\x20GmbH\r\nRelease:\x2002/07/14\x20\(SVN\x20revision:\x2023550M\)\r\n\r\nDD-WRT\x20login:\x20&quot;)%r(RPCCheck,19,&quot;\xff\xfd\x01\xff\xfd\x1f\xff\xfb\x01\xff\xfb\x03\r\r\n\x80\^@\^@\(r\xfe\^\]&quot;)%r(DNSVersionBindReq,42,&quot;\xff\xfd\x01\xff\xfd\x1f\xff\xfb\x01\xff\xfb\x03\r\r\n\^@\^\^\^@\^F\^A\^@\^@\^A\^@\^@\^@\^@\^@\^@\^Gversionbind\^@\^@\^P\^@\^C&quot;)%r(DNSStatusRequest,95,&quot;\xff\xfd\x01\xff\xfd\x1f\xff\xfb\x01\xff\xfb\x03\r\r\n\^@\^L\^@\^@\^P\^@\^@\^@\^@\^@\^@\^@\^@DD-WRT\x20v24-sp2\x20kongac\x20\(c\)\x202014\x20NewMedia-NET\x20GmbH\r\nRelease:\x2002/07/14\x20\(SVN\x20revision:\x2023550M\)\r\n\r\nDD-WRT\x20login:\x20&quot;);" method="table" conf="3"/></port>
+    <port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="domain" product="dnsmasq" version="2.45" method="probed" conf="10"><cpe>cpe:/a:thekelleys:dnsmasq:2.45</cpe></service><script id="dns-nsid" output="&#xa;  bind.version: dnsmasq-2.45&#xa;"/></port>
+    <port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="DD-WRT milli_httpd" ostype="Linux" devicetype="WAP" method="probed" conf="10"><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-title" output="DD-WRT (build 23550M) - Info"><elem key="title">DD-WRT (build 23550M) - Info</elem>
+    </script></port>
+    </ports>
+    <os><portused state="open" proto="tcp" portid="23"/>
+    <portused state="closed" proto="tcp" portid="1"/>
+    <portused state="closed" proto="udp" portid="34684"/>
+    <osmatch name="Netgear DG834G WAP or Western Digital WD TV media player" accuracy="95" line="61906">
+    <osclass type="WAP" vendor="Netgear" osfamily="embedded" accuracy="95"><cpe>cpe:/h:netgear:dg834g</cpe></osclass>
+    <osclass type="media device" vendor="Western Digital" osfamily="embedded" accuracy="95"><cpe>cpe:/o:westerndigital:wd_tv</cpe></osclass>
+    </osmatch>
+    <osmatch name="Linux 2.6.32 - 3.9" accuracy="95" line="43425">
+    <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+    <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+    </osmatch>
+    <osmatch name="Android 4.1.1" accuracy="94" line="77960">
+    <osclass type="media device" vendor="Google" osfamily="Android" osgen="4.X" accuracy="94"><cpe>cpe:/o:google:android:4</cpe></osclass>
+    </osmatch>
+    <osmatch name="Linux 2.6.32" accuracy="94" line="42061">
+    <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+    </osmatch>
+    <osmatch name="Linux 3.1" accuracy="93" line="76656">
+    <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+    </osmatch>
+    <osmatch name="Linux 3.2" accuracy="93" line="77811">
+    <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+    </osmatch>
+    <osmatch name="AXIS 210A or 211 Network Camera (Linux 2.6)" accuracy="92" line="7328">
+    <osclass type="webcam" vendor="AXIS" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/h:axis:210a_network_camera</cpe><cpe>cpe:/h:axis:211_network_camera</cpe><cpe>cpe:/o:axis:linux_kernel:2.6</cpe></osclass>
+    </osmatch>
+    <osmatch name="Linux 2.6.32 - 2.6.35" accuracy="92" line="43072">
+    <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+    </osmatch>
+    <osmatch name="Linux 2.6.32 - 3.2" accuracy="92" line="43301">
+    <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+    <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+    </osmatch>
+    <osmatch name="HP P2000 G3 NAS device" accuracy="92" line="25943">
+    <osclass type="storage-misc" vendor="HP" osfamily="embedded" accuracy="92"><cpe>cpe:/h:hp:p2000_g3</cpe></osclass>
+    </osmatch>
+    <osfingerprint fingerprint="OS:SCAN(V=6.40%E=4%D=2/12%OT=23%CT=1%CU=34684%PV=Y%DS=1%DC=D%G=Y%M=60A44C%T&#xa;OS:M=54DD5A3F%P=x86_64-pc-linux-gnu)SEQ(SP=103%GCD=1%ISR=10B%TI=Z%CI=I%TS=7&#xa;OS:)SEQ(SP=103%GCD=1%ISR=10B%TI=Z%CI=I%II=I%TS=7)OPS(O1=M5B4ST11NW4%O2=M5B4&#xa;OS:ST11NW4%O3=M5B4NNT11NW4%O4=M5B4ST11NW4%O5=M5B4ST11NW4%O6=M5B4ST11)WIN(W1&#xa;OS:=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)ECN(R=Y%DF=Y%T=40%W=7210%O&#xa;OS:=M5B4NNSNW4%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N&#xa;OS:)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=&#xa;OS:S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF&#xa;OS:=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=&#xa;OS:G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+    </os>
+    <uptime seconds="497075" lastboot="Sat Feb  7 02:53:48 2015"/>
+    <distance value="1"/>
+    <tcpsequence index="259" difficulty="Good luck!" values="A3D3B909,35CA672E,894C139,5C87C956,77623415,C2EE172C"/>
+    <ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+    <tcptssequence class="100HZ" values="2F66D54,2F66D5E,2F66D68,2F66D72,2F66D7C,2F66D86"/>
+    <trace>
+    <hop ttl="1" ipaddr="10.151.8.2" rtt="0.32" host="thebmw-win81.cave.norserage.com"/>
+    </trace>
+    <times srtt="316" rttvar="15" to="100000"/>
+    </host>
+    <host starttime="1423792129" endtime="1423792677"><status state="up" reason="arp-response" reason_ttl="0"/>
+    <address addr="10.151.8.52" addrtype="ipv4"/>
+    <address addr="00:50:56:B3:5D:7A" addrtype="mac" vendor="VMware"/>
+    <hostnames>
+    <hostname name="Windows10tp-2.cave.norserage.com" type="PTR"/>
+    </hostnames>
+    <ports><extraports state="filtered" count="999">
+    <extrareasons reason="no-responses" count="999"/>
+    </extraports>
+    <port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+    </ports>
+    <os><portused state="open" proto="tcp" portid="135"/>
+    <osmatch name="Microsoft Windows Server 2008 Beta 3" accuracy="100" line="52037">
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2008::beta3</cpe></osclass>
+    </osmatch>
+    <osmatch name="Microsoft Windows 7 Professional" accuracy="100" line="52938">
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="100"><cpe>cpe:/o:microsoft:windows_7::-:professional</cpe></osclass>
+    </osmatch>
+    <osmatch name="Microsoft Windows Phone 7.5" accuracy="100" line="54362">
+    <osclass type="phone" vendor="Microsoft" osfamily="Windows" osgen="Phone" accuracy="100"><cpe>cpe:/o:microsoft:windows</cpe></osclass>
+    </osmatch>
+    <osmatch name="Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7" accuracy="100" line="54897">
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="100"><cpe>cpe:/o:microsoft:windows_vista::-</cpe><cpe>cpe:/o:microsoft:windows_vista::sp1</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2008::sp1</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="100"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+    </osmatch>
+    <osmatch name="Microsoft Windows Vista SP2, Windows 7 SP1, or Windows Server 2008" accuracy="100" line="55210">
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="100"><cpe>cpe:/o:microsoft:windows_vista::sp2</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="100"><cpe>cpe:/o:microsoft:windows_7::sp1</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2008</cpe></osclass>
+    </osmatch>
+    </os>
+    <uptime seconds="110130" lastboot="Wed Feb 11 14:22:53 2015"/>
+    <distance value="1"/>
+    <tcpsequence index="261" difficulty="Good luck!" values="34FAEE1A,CDC65513,ED8A8B86,52A9B71A,3B217E71,E5215761"/>
+    <ipidsequence class="Incremental" values="3145,3146,3147,3148,3149,314A"/>
+    <tcptssequence class="100HZ" values="A7F989,A7F994,A7F99E,A7F9A8,A7F9B2,A7F9BC"/>
+    <trace>
+    <hop ttl="1" ipaddr="10.151.8.52" rtt="0.20" host="Windows10tp-2.cave.norserage.com"/>
+    </trace>
+    <times srtt="201" rttvar="21" to="100000"/>
+    </host>
+    <host starttime="1423792129" endtime="1423792677"><status state="up" reason="arp-response" reason_ttl="0"/>
+    <address addr="10.151.8.54" addrtype="ipv4"/>
+    <address addr="00:50:56:B3:B9:52" addrtype="mac" vendor="VMware"/>
+    <hostnames>
+    <hostname name="Windows10tp-1.cave.norserage.com" type="PTR"/>
+    </hostnames>
+    <ports><extraports state="filtered" count="998">
+    <extrareasons reason="no-responses" count="998"/>
+    </extraports>
+    <port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+    <port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ms-wbt-server" product="Microsoft Terminal Service" ostype="Windows" method="probed" conf="10"/></port>
+    </ports>
+    <os><portused state="open" proto="tcp" portid="135"/>
+    <osmatch name="Microsoft Windows Server 2008 Beta 3" accuracy="100" line="52037">
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2008::beta3</cpe></osclass>
+    </osmatch>
+    <osmatch name="Microsoft Windows 7 Professional" accuracy="100" line="52938">
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="100"><cpe>cpe:/o:microsoft:windows_7::-:professional</cpe></osclass>
+    </osmatch>
+    <osmatch name="Microsoft Windows Phone 7.5" accuracy="100" line="54362">
+    <osclass type="phone" vendor="Microsoft" osfamily="Windows" osgen="Phone" accuracy="100"><cpe>cpe:/o:microsoft:windows</cpe></osclass>
+    </osmatch>
+    <osmatch name="Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7" accuracy="100" line="54897">
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="100"><cpe>cpe:/o:microsoft:windows_vista::-</cpe><cpe>cpe:/o:microsoft:windows_vista::sp1</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2008::sp1</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="100"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+    </osmatch>
+    <osmatch name="Microsoft Windows Vista SP2, Windows 7 SP1, or Windows Server 2008" accuracy="100" line="55210">
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="100"><cpe>cpe:/o:microsoft:windows_vista::sp2</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="100"><cpe>cpe:/o:microsoft:windows_7::sp1</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2008</cpe></osclass>
+    </osmatch>
+    </os>
+    <uptime seconds="109186" lastboot="Wed Feb 11 14:38:37 2015"/>
+    <distance value="1"/>
+    <tcpsequence index="262" difficulty="Good luck!" values="2D2152D0,6395E576,F4AD5453,83CA8187,2A79F8CC,1F3DE63E"/>
+    <ipidsequence class="Incremental" values="5EE3,5EE4,5EE5,5EE6,5EE7,5EE8"/>
+    <tcptssequence class="100HZ" values="A688C0,A688CA,A688D4,A688DE,A688E8,A688F2"/>
+    <trace>
+    <hop ttl="1" ipaddr="10.151.8.54" rtt="0.20" host="Windows10tp-1.cave.norserage.com"/>
+    </trace>
+    <times srtt="199" rttvar="36" to="100000"/>
+    </host>
+    <host starttime="1423792129" endtime="1423792674"><status state="up" reason="arp-response" reason_ttl="0"/>
+    <address addr="10.151.8.55" addrtype="ipv4"/>
+    <address addr="4C:72:B9:5A:82:36" addrtype="mac" vendor="Pegatron"/>
+    <hostnames>
+    <hostname name="TheCardboardBox.cave.norserage.com" type="PTR"/>
+    </hostnames>
+    <ports><extraports state="filtered" count="994">
+    <extrareasons reason="no-responses" count="994"/>
+    </extraports>
+    <port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http" product="VMware VirtualCenter Web service" tunnel="ssl" method="probed" conf="10"/><script id="http-methods" output="No Allow or Public header in OPTIONS response (status code 501)"/><script id="http-title" output="Site doesn&apos;t have a title (text; charset=plain)."></script><script id="ssl-cert" output="Subject: commonName=VMware/countryName=US&#xa;Not valid before: 2013-11-24T04:47:55+00:00&#xa;Not valid after:  2014-11-24T04:47:55+00:00"><table key="subject">
+    <elem key="localityName">Palo Alto</elem>
+    <elem key="emailAddress">none@vmware.com</elem>
+    <elem key="countryName">US</elem>
+    <elem key="commonName">VMware</elem>
+    <elem key="organizationalUnitName">VMware</elem>
+    </table>
+    <table key="issuer">
+    <elem key="localityName">Palo Alto</elem>
+    <elem key="emailAddress">none@vmware.com</elem>
+    <elem key="countryName">US</elem>
+    <elem key="commonName">VMware</elem>
+    <elem key="organizationalUnitName">VMware</elem>
+    </table>
+    <table key="pubkey">
+    <elem key="type">rsa</elem>
+    <elem key="bits">2048</elem>
+    </table>
+    <table key="validity">
+    <elem key="notAfter">2014-11-24T04:47:55+00:00</elem>
+    <elem key="notBefore">2013-11-24T04:47:55+00:00</elem>
+    </table>
+    <elem key="md5">fbe286f421d7708748d13622a8f49f36</elem>
+    <elem key="sha1">4401af5da69d1828c3002df1061c3baf3db07b78</elem>
+    <elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEEjCCAvqgAwIBAgIJAIV2wSzcB69PMA0GCSqGSIb3DQEBCwUAMGMxCzAJBgNV&#xa;BAYTAlVTMRIwEAYDVQQHEwlQYWxvIEFsdG8xDzANBgNVBAsTBlZNd2FyZTEPMA0G&#xa;A1UEAxMGVk13YXJlMR4wHAYJKoZIhvcNAQkBFg9ub25lQHZtd2FyZS5jb20wHhcN&#xa;MTMxMTI0MDQ0NzU1WhcNMTQxMTI0MDQ0NzU1WjBjMQswCQYDVQQGEwJVUzESMBAG&#xa;A1UEBxMJUGFsbyBBbHRvMQ8wDQYDVQQLEwZWTXdhcmUxDzANBgNVBAMTBlZNd2Fy&#xa;ZTEeMBwGCSqGSIb3DQEJARYPbm9uZUB2bXdhcmUuY29tMIIBIjANBgkqhkiG9w0B&#xa;AQEFAAOCAQ8AMIIBCgKCAQEAqlJfb+7RuNgk7ly2ox9WeHIHNS3qsCkckfaomdne&#xa;2VgNH4Qbk7tYaErkvZNS8shDWeCBLQyvRhOD1OT1MwTUIS8XVN1JTiFQntLzae0k&#xa;Hbuah2dby8lSG20wSLVgckmgTrOZyMnwd7swOWVBbp9OeyT9PaMjN+oCNVfzHQjQ&#xa;tOPC/KXymB1nRMAGd25OwKA5oCaDe1BIrsruvbxm6QsWlSlJ8qWppc9CvQreMUw/&#xa;yR1xSxuTF0SPecqyF6qhY6mfAilFCY7yTDZZA126/pmL2r8SD4jH83WOA+lamGOv&#xa;3H5rRERv2rWiPILEPAFyrVThuuCCn+PjRhpweM58HQOjZwIDAQABo4HIMIHFMB0G&#xa;A1UdDgQWBBQZwB+ImMIOd2AWFHx4h19dy1rQ6jCBlQYDVR0jBIGNMIGKgBQZwB+I&#xa;mMIOd2AWFHx4h19dy1rQ6qFnpGUwYzELMAkGA1UEBhMCVVMxEjAQBgNVBAcTCVBh&#xa;bG8gQWx0bzEPMA0GA1UECxMGVk13YXJlMQ8wDQYDVQQDEwZWTXdhcmUxHjAcBgkq&#xa;hkiG9w0BCQEWD25vbmVAdm13YXJlLmNvbYIJAIV2wSzcB69PMAwGA1UdEwQFMAMB&#xa;Af8wDQYJKoZIhvcNAQELBQADggEBAFXh2JMj4E4n/9B61yKoKQmZs5ePsii0VhXh&#xa;4T3sH4c2L2DtleJeSzWmOBWy2aX3zADy8dXi5dl7n/6iYxHO60yLPE3Zzj+pKgQE&#xa;IGjDYfo13mMx3CsRpWeizNKmigy3QiyUVnF5daCXxi9SSc5XkSG2yYoM3UVWuxjc&#xa;lLMW773x449ZLgZHt7hGyJc9LhGZQqlMIM0T3cUh5T6PGB4ZtFf+SdO+VaD2HHKy&#xa;GgPi6kAMdyuKFMDKJ3BFziCvHmy6Nz6Yxm00k9fmFtywzcw6OoxxEJ5uOLsxK2gm&#xa;qFfLrUpqqvjnNucUTh8HP3nh9TP6my/791TlluvjPDWYyc0gQWA=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+    </script></port>
+    <port protocol="tcp" portid="902"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="vmware-auth" product="VMware Authentication Daemon" version="1.10" extrainfo="Uses VNC, SOAP" tunnel="ssl" method="probed" conf="10"/></port>
+    <port protocol="tcp" portid="912"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="vmware-auth" product="VMware Authentication Daemon" version="1.0" extrainfo="Uses VNC, SOAP" method="probed" conf="10"/></port>
+    <port protocol="tcp" portid="1025"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+    <port protocol="tcp" portid="1027"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+    <port protocol="tcp" portid="1029"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+    </ports>
+    <os><portused state="open" proto="tcp" portid="443"/>
+    <osmatch name="Microsoft Windows Server 2008 Beta 3" accuracy="100" line="52037">
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2008::beta3</cpe></osclass>
+    </osmatch>
+    <osmatch name="Microsoft Windows Phone 7.5" accuracy="100" line="54362">
+    <osclass type="phone" vendor="Microsoft" osfamily="Windows" osgen="Phone" accuracy="100"><cpe>cpe:/o:microsoft:windows</cpe></osclass>
+    </osmatch>
+    <osmatch name="Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7" accuracy="100" line="54897">
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="100"><cpe>cpe:/o:microsoft:windows_vista::-</cpe><cpe>cpe:/o:microsoft:windows_vista::sp1</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2008::sp1</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="100"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+    </osmatch>
+    <osmatch name="Microsoft Windows Vista SP2, Windows 7 SP1, or Windows Server 2008" accuracy="100" line="55210">
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="100"><cpe>cpe:/o:microsoft:windows_vista::sp2</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="100"><cpe>cpe:/o:microsoft:windows_7::sp1</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2008</cpe></osclass>
+    </osmatch>
+    </os>
+    <uptime seconds="44343" lastboot="Thu Feb 12 08:39:20 2015"/>
+    <distance value="1"/>
+    <tcpsequence index="264" difficulty="Good luck!" values="29A3691E,8AB90C58,6FD2CBB0,18131B59,9C9907BF,983D4619"/>
+    <ipidsequence class="Incremental" values="F14,F15,F16,F17,F18,F19"/>
+    <tcptssequence class="100HZ" values="43977B,439785,43978F,439799,4397A3,4397AD"/>
+    <trace>
+    <hop ttl="1" ipaddr="10.151.8.55" rtt="0.40" host="TheCardboardBox.cave.norserage.com"/>
+    </trace>
+    <times srtt="396" rttvar="53" to="100000"/>
+    </host>
+    <host starttime="1423792129" endtime="1423792672"><status state="up" reason="arp-response" reason_ttl="0"/>
+    <address addr="10.151.8.91" addrtype="ipv4"/>
+    <address addr="C4:2C:03:30:8D:32" addrtype="mac" vendor="Apple"/>
+    <hostnames>
+    <hostname name="MBP.cave.norserage.com" type="PTR"/>
+    </hostnames>
+    <ports><extraports state="closed" count="999">
+    <extrareasons reason="resets" count="999"/>
+    </extraports>
+    <port protocol="tcp" portid="4242"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="vrml-multi-use" method="table" conf="3"/></port>
+    </ports>
+    <os><portused state="closed" proto="tcp" portid="1"/>
+    <portused state="closed" proto="udp" portid="30406"/>
+    </os>
+    <distance value="1"/>
+    <trace>
+    <hop ttl="1" ipaddr="10.151.8.91" rtt="0.51" host="MBP.cave.norserage.com"/>
+    </trace>
+    <times srtt="508" rttvar="392" to="100000"/>
+    </host>
+    <host starttime="1423792129" endtime="1423792677"><status state="up" reason="arp-response" reason_ttl="0"/>
+    <address addr="10.151.8.95" addrtype="ipv4"/>
+    <address addr="00:50:56:B3:BA:3F" addrtype="mac" vendor="VMware"/>
+    <hostnames>
+    <hostname name="WIN7-4.cave.norserage.com" type="PTR"/>
+    </hostnames>
+    <ports><extraports state="filtered" count="998">
+    <extrareasons reason="no-responses" count="998"/>
+    </extraports>
+    <port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+    <port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ms-wbt-server" product="Microsoft Terminal Service" ostype="Windows" method="probed" conf="10"/></port>
+    </ports>
+    <os><portused state="open" proto="tcp" portid="135"/>
+    <osmatch name="Microsoft Windows Server 2008 Beta 3" accuracy="100" line="52037">
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2008::beta3</cpe></osclass>
+    </osmatch>
+    <osmatch name="Microsoft Windows 7 Professional" accuracy="100" line="52938">
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="100"><cpe>cpe:/o:microsoft:windows_7::-:professional</cpe></osclass>
+    </osmatch>
+    <osmatch name="Microsoft Windows Phone 7.5" accuracy="100" line="54362">
+    <osclass type="phone" vendor="Microsoft" osfamily="Windows" osgen="Phone" accuracy="100"><cpe>cpe:/o:microsoft:windows</cpe></osclass>
+    </osmatch>
+    <osmatch name="Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7" accuracy="100" line="54897">
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="100"><cpe>cpe:/o:microsoft:windows_vista::-</cpe><cpe>cpe:/o:microsoft:windows_vista::sp1</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2008::sp1</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="100"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+    </osmatch>
+    <osmatch name="Microsoft Windows Vista SP2, Windows 7 SP1, or Windows Server 2008" accuracy="100" line="55210">
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="100"><cpe>cpe:/o:microsoft:windows_vista::sp2</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="100"><cpe>cpe:/o:microsoft:windows_7::sp1</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2008</cpe></osclass>
+    </osmatch>
+    </os>
+    <uptime seconds="63443" lastboot="Thu Feb 12 03:21:00 2015"/>
+    <distance value="1"/>
+    <tcpsequence index="260" difficulty="Good luck!" values="5D6C811D,8CA3DC96,2476ADD8,B76231DD,951D2C12,BC09C7C9"/>
+    <ipidsequence class="Incremental" values="3BA4,3BA5,3BA6,3BA7,3BA8,3BA9"/>
+    <tcptssequence class="100HZ" values="60BC60,60BC6A,60BC75,60BC7F,60BC89,60BC93"/>
+    <trace>
+    <hop ttl="1" ipaddr="10.151.8.95" rtt="0.22" host="WIN7-4.cave.norserage.com"/>
+    </trace>
+    <times srtt="219" rttvar="23" to="100000"/>
+    </host>
+    <host starttime="1423792129" endtime="1423792677"><status state="up" reason="arp-response" reason_ttl="0"/>
+    <address addr="10.151.8.104" addrtype="ipv4"/>
+    <address addr="00:50:56:B3:13:F2" addrtype="mac" vendor="VMware"/>
+    <hostnames>
+    <hostname name="WIN7-2.cave.norserage.com" type="PTR"/>
+    </hostnames>
+    <ports><extraports state="filtered" count="998">
+    <extrareasons reason="no-responses" count="998"/>
+    </extraports>
+    <port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+    <port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ms-wbt-server" product="Microsoft Terminal Service" ostype="Windows" method="probed" conf="10"/></port>
+    </ports>
+    <os><portused state="open" proto="tcp" portid="135"/>
+    <osmatch name="Microsoft Windows Server 2008 Beta 3" accuracy="100" line="52037">
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2008::beta3</cpe></osclass>
+    </osmatch>
+    <osmatch name="Microsoft Windows 7 Professional" accuracy="100" line="52938">
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="100"><cpe>cpe:/o:microsoft:windows_7::-:professional</cpe></osclass>
+    </osmatch>
+    <osmatch name="Microsoft Windows Phone 7.5" accuracy="100" line="54362">
+    <osclass type="phone" vendor="Microsoft" osfamily="Windows" osgen="Phone" accuracy="100"><cpe>cpe:/o:microsoft:windows</cpe></osclass>
+    </osmatch>
+    <osmatch name="Microsoft Windows Vista SP0 or SP1, Windows Server 2008 SP1, or Windows 7" accuracy="100" line="54897">
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="100"><cpe>cpe:/o:microsoft:windows_vista::-</cpe><cpe>cpe:/o:microsoft:windows_vista::sp1</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2008::sp1</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="100"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+    </osmatch>
+    <osmatch name="Microsoft Windows Vista SP2, Windows 7 SP1, or Windows Server 2008" accuracy="100" line="55210">
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="100"><cpe>cpe:/o:microsoft:windows_vista::sp2</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="100"><cpe>cpe:/o:microsoft:windows_7::sp1</cpe></osclass>
+    <osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="100"><cpe>cpe:/o:microsoft:windows_server_2008</cpe></osclass>
+    </osmatch>
+    </os>
+    <uptime seconds="25716" lastboot="Thu Feb 12 13:49:47 2015"/>
+    <distance value="1"/>
+    <tcpsequence index="260" difficulty="Good luck!" values="CD83A01F,278B898F,1B852ED7,D2903B8A,8331A99,9AC520D4"/>
+    <ipidsequence class="Incremental" values="4196,4197,4198,4199,419A,419B"/>
+    <tcptssequence class="100HZ" values="272B44,272B4E,272B59,272B63,272B6D,272B77"/>
+    <trace>
+    <hop ttl="1" ipaddr="10.151.8.104" rtt="0.21" host="WIN7-2.cave.norserage.com"/>
+    </trace>
+    <times srtt="208" rttvar="44" to="100000"/>
+    </host>
+    <host starttime="1423792703" endtime="1423792726"><status state="up" reason="localhost-response" reason_ttl="0"/>
+    <address addr="10.151.8.149" addrtype="ipv4"/>
+    <hostnames>
+    <hostname name="ubuntu.cave.norserage.com" type="PTR"/>
+    </hostnames>
+    <ports><extraports state="closed" count="999">
+    <extrareasons reason="resets" count="999"/>
+    </extraports>
+    <port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" extrainfo="protocol 2.0" servicefp="SF-Port22-TCP:V=6.40%I=7%D=2/12%Time=54DD5A47%P=x86_64-pc-linux-gnu%r(NULL,29,&quot;SSH-2\.0-OpenSSH_6\.6\.1p1\x20Ubuntu-2ubuntu2\r\n&quot;);" method="probed" conf="10"/><script id="ssh-hostkey" output="1024 64:56:37:c1:1b:58:a0:64:88:e6:90:03:fa:c1:f5:fb (DSA)&#xa;2048 38:d3:6b:a7:71:d0:53:6e:9f:d7:99:b6:f6:24:fc:56 (RSA)&#xa;256 46:72:2a:73:01:23:83:9c:f3:b6:ce:36:3c:16:79:8a (ECDSA)"><table>
+    <elem key="key">AAAAB3NzaC1kc3MAAACBAMWrPxkv1nYHnXjTl0+9kbdTTx62WjlSlzBaBI1y4fffoFDjti+9KGQjSxlqB0WZSakkNa7Vvx67IUafg+dKdsU3vyemFsybkqScTtJPaeAIGJ1XDAx+s5RVD8j/QZBmKEf2GQb7ho0Xhe8WBobVK22y4RDHCHoGAer1sBmmjvZjAAAAFQCZJP/SHzzNkUp0vG9ffAjdtoMZ4wAAAIEAt3BMv3qfE9xBrrZ/9Jy2AwmEywU/kGC19qtEfipf6Mw5TcI8s4l7rkx61+cO9cGL3waQJZdzDCa00W+AfmQPzzKlu2NW6tb73bxHqoowu+ki3qNr4jCbaXcaGPFJ11cu4DQE0paGK/LWFa15zqYbsxX9On+XBnFff0A7pvHMZbUAAACAL9vyOgjvcipyyafm6k+cLWEvdMAs9pKYpuI/bv4rP7dbHrePiZpBRa7flrog+LyOMf0VBbe4tCQv/yEQbrjnnsErQJ17iNYbKWnKaK3EpcNb6l0OYAkCYmOOVac+srubt5q4kHKc6SIbzdUIDUSRW5MOUr0JoEEidS9N5+kFTEA=</elem>
+    <elem key="bits">1024</elem>
+    <elem key="type">ssh-dss</elem>
+    <elem key="fingerprint">645637c11b58a06488e69003fac1f5fb</elem>
+    </table>
+    <table>
+    <elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDb9Hpk6VseXK1S9p0FTtvg/d1OCW31TJsL5K4GGJajOwyweoTR3DQ1oavZjbEu3gZwwrthtsggBU8GBFlALigBUpGabrpV4vLTKN9yzWilAYmuea6EBDtvuxABJhTzu57XQ10Hsx+Y7rRp2h2XmOjoYB8sBwAAv3oV6L6G7xzwXFmQD+VZl61TiqH24y5wNHrW0Sk8pMW8r1xtOC9t9SGPVoQdnpiK0YY53CvV7D2uPzHfa4g07aBAgPK6mAXmUldKMybmLAK4726d6H4lJ3MWucNSHWTX4IoGxgui99SfFOholScEEZG9BMjOKVNNNBbp/7S4AQa/aKixu2VboNGV</elem>
+    <elem key="bits">2048</elem>
+    <elem key="type">ssh-rsa</elem>
+    <elem key="fingerprint">38d36ba771d0536e9fd799b6f624fc56</elem>
+    </table>
+    <table>
+    <elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEwSZ6F+T6UaolwGLnraWAk17BCjrcjdxCb7SsidrUyksK7Ig4Ki2sMGAbJAG/6VUUidlqaYIz/CYdCIO+S6Gdw=</elem>
+    <elem key="bits">256</elem>
+    <elem key="type">ecdsa-sha2-nistp256</elem>
+    <elem key="fingerprint">46722a730123839cf3b6ce363c16798a</elem>
+    </table>
+    </script></port>
+    </ports>
+    <os><portused state="open" proto="tcp" portid="22"/>
+    <portused state="closed" proto="tcp" portid="1"/>
+    <portused state="closed" proto="udp" portid="37652"/>
+    <osmatch name="Linux 3.7 - 3.9" accuracy="98" line="76104">
+    <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="98"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+    </osmatch>
+    <osmatch name="Netgear DG834G WAP or Western Digital WD TV media player" accuracy="96" line="61906">
+    <osclass type="WAP" vendor="Netgear" osfamily="embedded" accuracy="96"><cpe>cpe:/h:netgear:dg834g</cpe></osclass>
+    <osclass type="media device" vendor="Western Digital" osfamily="embedded" accuracy="96"><cpe>cpe:/o:westerndigital:wd_tv</cpe></osclass>
+    </osmatch>
+    <osmatch name="Linux 3.8" accuracy="95" line="77648">
+    <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="95"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+    </osmatch>
+    <osmatch name="Linux 3.1" accuracy="93" line="76656">
+    <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+    </osmatch>
+    <osmatch name="Linux 3.2" accuracy="93" line="77811">
+    <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="93"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+    </osmatch>
+    <osmatch name="AXIS 210A or 211 Network Camera (Linux 2.6)" accuracy="92" line="7328">
+    <osclass type="webcam" vendor="AXIS" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/h:axis:210a_network_camera</cpe><cpe>cpe:/h:axis:211_network_camera</cpe><cpe>cpe:/o:axis:linux_kernel:2.6</cpe></osclass>
+    </osmatch>
+    <osmatch name="Linux 3.7" accuracy="92" line="77269">
+    <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+    </osmatch>
+    <osmatch name="Linux 3.9" accuracy="91" line="78127">
+    <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+    </osmatch>
+    <osmatch name="Crestron XPanel control system" accuracy="91" line="15741">
+    <osclass type="specialized" vendor="Crestron" osfamily="2-Series" accuracy="91"><cpe>cpe:/o:crestron:2_series</cpe></osclass>
+    </osmatch>
+    <osmatch name="Linux 2.4.26 (Slackware 10.0.0)" accuracy="91" line="34666">
+    <osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:2.4.26</cpe></osclass>
+    </osmatch>
+    <osfingerprint fingerprint="OS:SCAN(V=6.40%E=4%D=2/12%OT=22%CT=1%CU=37652%PV=Y%DS=0%DC=L%G=Y%TM=54DD5A5&#xa;OS:6%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=10A%TI=Z%CI=I%TS=8)SEQ(SP=1&#xa;OS:05%GCD=1%ISR=10A%TI=Z%CI=I%II=I%TS=8)OPS(O1=MFFD7ST11NW7%O2=MFFD7ST11NW7&#xa;OS:%O3=MFFD7NNT11NW7%O4=MFFD7ST11NW7%O5=MFFD7ST11NW7%O6=MFFD7ST11)WIN(W1=AA&#xa;OS:AA%W2=AAAA%W3=AAAA%W4=AAAA%W5=AAAA%W6=AAAA)ECN(R=Y%DF=Y%T=40%W=AAAA%O=MF&#xa;OS:FD7NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T&#xa;OS:4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+&#xa;OS:%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y&#xa;OS:%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%&#xa;OS:RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)&#xa;"/>
+    </os>
+    <uptime seconds="4387" lastboot="Thu Feb 12 19:45:39 2015"/>
+    <distance value="0"/>
+    <tcpsequence index="261" difficulty="Good luck!" values="53822CA1,D90058DE,F3B233D8,B2D2B187,EBAC3753,D0A3F1C3"/>
+    <ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+    <tcptssequence class="other" values="10BB05,10BB1E,10BB37,10BB50,10BB69,10BB82"/>
+    <times srtt="21" rttvar="16" to="100000"/>
+    </host>
+    <runstats><finished time="1423792726" timestr="Thu Feb 12 20:58:46 2015" elapsed="598.56" summary="Nmap done at Thu Feb 12 20:58:46 2015; 256 IP addresses (9 hosts up) scanned in 598.56 seconds" exit="success"/><hosts up="9" down="247" total="256"/>
+    </runstats>
+    </nmaprun>
+
+
