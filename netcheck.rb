@@ -11,4 +11,8 @@ while command == ""
   sleep 2
 end
 
-puts command
+ip = command
+mac = `ifconfig eth0 | grep 'inet addr:' | cut -d: -f4`
+
+puts ip.chomp
+puts mac.chomp
