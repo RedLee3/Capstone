@@ -2,6 +2,9 @@
 
 require 'ipaddr'
 
+#TODO: Start postgress
+#TODO: Start openvas components
+
 #Command and stuff to get the ip address from ifconfig
 command = `ifconfig eth0 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}'`
 
