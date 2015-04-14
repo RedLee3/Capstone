@@ -30,3 +30,8 @@ cidr = IPAddr.new(mac).to_i.to_s(2).count("1")
 scan = `msfconsole -x "db_nmap #{ip}/#{cidr} -A"`
 
 scan
+
+#Starting openvas for later use
+`openvassd`
+`openvasmd`
+`gsad`
