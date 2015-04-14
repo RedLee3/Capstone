@@ -31,6 +31,9 @@ scan = `msfconsole -x "db_nmap #{ip}/#{cidr} -A"`
 
 scan
 
+#Start PHP, if it isn't already running
+`service php5-fpm restart`
+
 #Starting openvas for later use
 `openvassd`
 `openvasmd`
